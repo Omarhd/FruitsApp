@@ -1,13 +1,13 @@
 //
-//  FruitRowView.swift
+//  FruitItemView.swift
 //  FruitsApp
 //
-//  Created by Omar Abdulrahman on 29/11/2023.
+//  Created by Omar Abdulrahman on 30/11/2023.
 //
 
 import SwiftUI
 
-struct FruitRowView: View {
+struct FruitItemView: View {
     
     // MARK: - PROPERTIES
     var fruit: Fruit
@@ -15,7 +15,7 @@ struct FruitRowView: View {
     
     // MARK: - BODY
     var body: some View {
-        HStack(spacing: 12) {
+        VStack(spacing: 12) {
             Image(fruit.image)
                 .renderingMode(.original)
                 .resizable()
@@ -26,21 +26,18 @@ struct FruitRowView: View {
                            startPoint: .top, endPoint: .bottom))
                 .cornerRadius(8)
             
-            VStack(alignment: .leading, spacing: 6) {
-                Text(fruit.title)
-                    .font(.title2)
-                    .fontWeight(.bold)
+
+            Text(fruit.title)
+                .font(.title3)
+                .fontWeight(.regular)
                 
-                Text(fruit.headline)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            } //: VSTACK
-        } //: HSTACK
+        } //: VSTACK
     } // : BODY
 }
 
 
 // MARK: - PREVIEW
+
 #Preview {
-    FruitRowView(fruit: fruitsData[2])
+    FruitItemView(fruit: fruitsData[2])
 }

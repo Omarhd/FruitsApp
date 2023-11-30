@@ -9,26 +9,23 @@ import SwiftUI
 
 struct FruitListView: View {
     
-    // MARK: - PROPERTIES
+    // MARK: - PROPERTIES  
     var fruits: [Fruit] = fruitsData
-    
+
     // MARK: - BODY
     
     var body: some View {
-        NavigationView {
             List {
                 ForEach(fruits.shuffled()) { fruit in
-                    FruitRowView(fruit: fruit)
-                        .padding(.vertical, 2)
-                        .onTapGesture {
-                            withAnimation {
-                                print(fruit.title)
-                            }
-                        }
+                    NavigationLink(destination: FruitDetailsView(fruit: fruit)) {
+                        FruitRowView(fruit: fruit)
+                            .padding(.vertical, 2)
+                        
+                    } // : NAVIGATIONLINK
                 } // : FOREACH
             } // : LIST
-            .navigationTitle("🫐 Fruits")
-        } // : NAVIGATION VIEW
+            .scrollIndicators(.hidden)
+            .navigationTitle("🧾 List")
     }
 }
 

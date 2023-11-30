@@ -20,7 +20,7 @@ struct StartButtonView: View {
         })
         {
             HStack (spacing: 8) {
-                Text(setTitleText(fruit: fruitsData))
+                Text("Next")
                 Image(systemName:"arrow.right.circle")
                     .imageScale(.large)
                 
@@ -31,16 +31,10 @@ struct StartButtonView: View {
             )
         } // : BUTTON
         .accentColor(.white)
-    }
-    
-    func setTitleText(fruit: [Fruit]) -> String {
-        if (fruit.last != nil) {
-            return "Start"
-        } else {
-            return "Next"
-        }
-    }
+    } // : BODY
 }
+
+// MARK: - PREVIEW
 
 #Preview {
     StartButtonView()

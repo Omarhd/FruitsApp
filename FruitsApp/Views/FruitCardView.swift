@@ -55,7 +55,7 @@ struct FruitCardView: View {
         endPoint: . bottom))
         .cornerRadius (20)
         .padding(.horizontal, 20)
-    }
+    } // : BODY
 }
 
 // MARK: - PREVIEW
