@@ -20,7 +20,6 @@ struct SettingsLabelView: View {
             Spacer()
             Image(systemName: labelImage)
         }
-        .padding()
     }
 }
 

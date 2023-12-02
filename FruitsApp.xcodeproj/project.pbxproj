@@ -34,6 +34,7 @@
 		1699BADF2B1901A0007DC331 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699BADE2B1901A0007DC331 /* SettingsLabelView.swift */; };
 		1699BAE12B1903F1007DC331 /* ProfileLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699BAE02B1903F1007DC331 /* ProfileLabelView.swift */; };
 		1699BAE32B190BDF007DC331 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699BAE22B190BDF007DC331 /* ProfileView.swift */; };
+		1699BAE52B1B4113007DC331 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699BAE42B1B4113007DC331 /* SettingsRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		1699BADE2B1901A0007DC331 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		1699BAE02B1903F1007DC331 /* ProfileLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLabelView.swift; sourceTree = "<group>"; };
 		1699BAE22B190BDF007DC331 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1699BAE42B1B4113007DC331 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 				1699BAD82B18A31C007DC331 /* GridVOrListiewToggleButton.swift */,
 				1699BADE2B1901A0007DC331 /* SettingsLabelView.swift */,
 				1699BAE02B1903F1007DC331 /* ProfileLabelView.swift */,
+				1699BAE42B1B4113007DC331 /* SettingsRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				1699BACF2B17DD47007DC331 /* FruitItemView.swift in Sources */,
 				1699BADB2B18A592007DC331 /* MainTabView.swift in Sources */,
 				1699BA8A2B175434007DC331 /* FruitListView.swift in Sources */,
+				1699BAE52B1B4113007DC331 /* SettingsRowView.swift in Sources */,
 				1699BAC12B17ACC5007DC331 /* OnBoardingView.swift in Sources */,
 				1699BABF2B1784D7007DC331 /* StartButtonView.swift in Sources */,
 				1699BAC72B17B08C007DC331 /* FruitData.swift in Sources */,
