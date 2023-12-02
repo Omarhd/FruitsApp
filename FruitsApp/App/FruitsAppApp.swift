@@ -12,13 +12,14 @@ struct FruitsAppApp: App {
     
     //MARK: - PROPERTIES
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
-   
+    var fruit = FruitOrderModel()
+
     var body: some Scene {
         WindowGroup {
             if isOnboarding {
                 OnBoardingView()
             } else {
-                MainTabView()
+                MainTabView().environmentObject(fruit)
             }
         }
     }

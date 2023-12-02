@@ -12,7 +12,8 @@ struct FruitMainView: View {
     // MARK: - PROPERTIES
     @State private var isShowingDetailsView: Bool = false
     @State private var isGridViewActive: Bool = false
-    
+//    @EnvironmentObject var order: FruitOrderModel
+
     // MARK: - BODY
     var body: some View {
         NavigationView {

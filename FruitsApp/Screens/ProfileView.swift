@@ -9,6 +9,11 @@ import SwiftUI
 
 struct ProfileView: View {
     
+    // MARK: - PROPERTIES
+
+    
+    // MARK: - BODY
+    
     var body: some View {
         NavigationView {
             List {
@@ -58,6 +63,8 @@ struct ProfileView: View {
         }
     }
 }
+
+// MARK: - PREVIEW
 
 #Preview {
     ProfileView()

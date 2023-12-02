@@ -11,6 +11,7 @@ struct FruitListView: View {
     
     // MARK: - PROPERTIES  
     var fruits: [Fruit] = fruitsData
+    @EnvironmentObject var order: FruitOrderModel
 
     // MARK: - BODY
     

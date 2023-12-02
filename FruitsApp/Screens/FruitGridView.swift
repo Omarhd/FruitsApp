@@ -11,7 +11,8 @@ struct FruitGridView: View {
     
     // MARK: - PROPERTIES
     @State private var selectedFruit: Fruit? = nil
-    
+    @EnvironmentObject var order: FruitOrderModel
+
     var fruits: [Fruit] = fruitsData
     
     let columns: [GridItem] = [GridItem(.flexible()),

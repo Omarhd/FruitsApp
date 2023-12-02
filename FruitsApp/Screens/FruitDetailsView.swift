@@ -11,6 +11,8 @@ struct FruitDetailsView: View {
     
     // MARK: - PROPERTIES
     var fruit: Fruit
+    @EnvironmentObject var order: FruitOrderModel
+
    
     // MARK: - BODY
     var body: some View {
@@ -23,10 +25,28 @@ struct FruitDetailsView: View {
 
                     VStack(alignment: .leading, spacing: 20) {
                         // MARK: - TITLE
-                        Text(fruit.title)
-                            .font(.largeTitle)
-                            .fontWeight(.heavy)
-                            .foregroundColor(fruit.gradientColors[1])
+                        HStack {
+                            Text(fruit.title)
+                                .font(.largeTitle)
+                                .fontWeight(.heavy)
+                                .foregroundColor(fruit.gradientColors[1])
+                                .padding(.bottom, 20)
+
+                            Spacer()
+                            
+                            VStack(spacing: 12) {
+                                
+                                Text("$\(fruit.price, specifier: "%.2f")")
+                                    .foregroundStyle(fruit.gradientColors[1])
+                                Button {
+                                    order.add(fruit)
+                                } label: {
+                                    Text("Add")
+                                        .foregroundStyle(fruit.gradientColors[1])
+                                }
+                                .standardButtonStyle().tint(fruit.gradientColors[1])
+                            }
+                        }
                         
                         // MARK: - HEADLINE
                         Text(fruit.headline)
