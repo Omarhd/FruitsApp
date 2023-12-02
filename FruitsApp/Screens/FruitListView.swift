@@ -24,8 +24,10 @@ struct FruitListView: View {
                     } // : NAVIGATIONLINK
                 } // : FOREACH
             } // : LIST
+            .listStyle(SidebarListStyle())
             .scrollIndicators(.hidden)
             .navigationTitle("🧾 List")
+            .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

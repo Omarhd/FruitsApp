@@ -39,7 +39,8 @@ struct ProfileLabelView: View {
                     .foregroundColor(.gray)
                     .bold()
                 
-            }
+            } // : VSTACK
+            .frame(minWidth: 200, maxHeight: 200)
             
             Spacer()
             

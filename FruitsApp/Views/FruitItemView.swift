@@ -30,7 +30,8 @@ struct FruitItemView: View {
             Text(fruit.title)
                 .font(.title3)
                 .fontWeight(.regular)
-                
+                .frame(maxHeight: 22)
+
         } //: VSTACK
         .padding(.top)
     } // : BODY

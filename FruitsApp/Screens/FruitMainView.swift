@@ -21,8 +21,10 @@ struct FruitMainView: View {
                 Group {
                     if isGridViewActive {
                         FruitGridView()
+                            .listStyle(SidebarListStyle())
                     } else {
                         FruitListView()
+                            .listStyle(SidebarListStyle())
                     }
                 }
                 .transition(.opacity) // Fade animation

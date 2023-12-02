@@ -99,9 +99,10 @@ struct SettingsView: View {
                        .sheet(isPresented: $isPresentingProfileView, content: {
                            ProfileView()
                        })
-        }
+        } // : NAVIGATION
+        .navigationTitle("Settings")
+        .navigationViewStyle(StackNavigationViewStyle())
     }
-    
 }
 
 // MARK: - PREVIEW
