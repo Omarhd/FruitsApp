@@ -30,7 +30,6 @@ struct FruitGridView: View {
                     }
                 }
             }
-            .padding()
             .scrollIndicators(.hidden)
             .navigationTitle("🧩 Grid")
         }

@@ -11,7 +11,7 @@ struct FruitMainView: View {
     
     // MARK: - PROPERTIES
     @State private var isShowingDetailsView: Bool = false
-    @State private var isGridViewActive: Bool = true
+    @State private var isGridViewActive: Bool = false
     
     // MARK: - BODY
     var body: some View {

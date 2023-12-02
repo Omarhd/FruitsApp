@@ -18,7 +18,7 @@ struct FruitsAppApp: App {
             if isOnboarding {
                 OnBoardingView()
             } else {
-                FruitMainView()
+                MainTabView()
             }
         }
     }

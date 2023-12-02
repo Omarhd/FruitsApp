@@ -32,6 +32,7 @@ struct FruitItemView: View {
                 .fontWeight(.regular)
                 
         } //: VSTACK
+        .padding(.top)
     } // : BODY
 }
 
