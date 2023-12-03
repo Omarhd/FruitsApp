@@ -15,21 +15,21 @@ struct ProfileLabelView: View {
         
     // MARK: - BODY
     var body: some View {
-        HStack(spacing: 20) {
+        HStack {
             ZStack {
                 Circle()
                     .fill(LinearGradient(gradient: Gradient(colors: [Color.red, Color.purple, Color.orange]), startPoint: .topLeading, endPoint: .bottomTrailing))
                     .frame(width: 70, height: 70)
-                    .padding(2) // Padding between the image and the circle
+                    .padding(4) // Padding between the image and the circle
                 
                 Image(systemName: "person.circle.fill")
                     .resizable()
-                    .frame(width: 66, height: 66)
+                    .frame(width: 64, height: 64)
                     .clipShape(Circle())
                     .padding(2)
             }
             
-            VStack(alignment: .leading, spacing: 4) {
+            VStack(alignment: .leading, spacing: 8) {
                 
                 Text(userName)
                     .font(.headline)
@@ -50,7 +50,7 @@ struct ProfileLabelView: View {
                 Image(systemName: "qrcode")
                     .resizable()
                     .frame(width: 20, height: 20)
-                    .padding(.bottom)
+                    .padding(.bottom, 25)
             }
         }
     }

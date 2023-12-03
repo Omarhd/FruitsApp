@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 @main
 struct FruitsAppApp: App {
@@ -20,6 +21,10 @@ struct FruitsAppApp: App {
                 OnBoardingView()
             } else {
                 MainTabView().environmentObject(fruit)
+                    .task {
+                        try? Tips.resetDatastore()
+                        try? Tips.configure([.datastoreLocation(.applicationDefault)])
+                    }
             }
         }
     }

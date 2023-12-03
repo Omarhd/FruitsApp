@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct FruitMainView: View {
     
     // MARK: - PROPERTIES
     @State private var isShowingDetailsView: Bool = false
     @State private var isGridViewActive: Bool = false
-//    @EnvironmentObject var order: FruitOrderModel
-
+    var addColorTip = AddcolorTips()
+    
     // MARK: - BODY
     var body: some View {
         NavigationView {
@@ -32,6 +33,7 @@ struct FruitMainView: View {
             }
             .navigationBarItems(
                 trailing: GridVOrListiewToggleButton(isActive: $isGridViewActive)
+                    .popoverTip(addColorTip)
             )
             
         } // : NAVIGATION VIEW

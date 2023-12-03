@@ -10,7 +10,7 @@ import SwiftUI
 struct FruitDetailsView: View {
     
     // MARK: - PROPERTIES
-    var fruit: Fruit
+    var fruit: Fruit = fruitsData[0]
     @EnvironmentObject var order: FruitOrderModel
 
    

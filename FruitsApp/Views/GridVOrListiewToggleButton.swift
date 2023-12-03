@@ -11,12 +11,13 @@ struct GridVOrListiewToggleButton: View {
     
     //MARK: - PROPERTIES
     @Binding var isActive: Bool
-    
-    
+    var addColorTip = AddcolorTips()
+
     // MARK: - BODY
     var body: some View {
         Button(action: {
             isActive.toggle()
+            addColorTip.invalidate(reason: .actionPerformed)
         }) {
             Image(systemName: isActive ? "list.bullet" : "square.grid.2x2.fill")
         }
